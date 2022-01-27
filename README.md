@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* References
+  - https://thoughtbot.com/blog/hotwire-asynchronously-loaded-tooltips
