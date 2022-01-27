@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  web: &web
+    tty: true
+    stdin_open: true
+    image: hodai1508/hotwire_tooltip:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # entrypoint: ['bundle', 'exec']
+    command: sh docker/start.sh
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
