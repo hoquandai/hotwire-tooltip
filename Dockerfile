@@ -1,6 +1,6 @@
 FROM ruby:3.1-alpine
 
-RUN apk add --update --no-cache bash build-base tzdata sqlite-dev
+RUN apk add --update --no-cache bash build-base tzdata sqlite-dev gcompat
 
 # Set the base directory that will be used from now on
 ENV RAILS_ROOT /app
